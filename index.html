@@ -1,0 +1,262 @@
+<html>
+<head>
+<title> Spotknack-task2</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body {
+   width: 100%;
+   height: 100%;
+   background-color:#b3e6ff;
+   margin: 0;
+   padding-top:20px;
+   box-sizing: border-box;
+ }
+
+/*-----------navbar------------*/
+
+.topnav {
+  margin-left: 20%;
+  width: 60%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 55px;
+  padding-left: 80px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+font-style:oblique;
+}
+
+.topnav a:hover {
+  background-color: blue;
+  color: black;
+}
+
+.topnav a.active {
+
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #share-buttons {
+   padding-left: 100px;
+   padding-top: 0px;
+ }
+   #share-buttons img {
+   width: 2px;
+   padding:0px;
+   border: 0;
+   box-shadow: 0;
+   display:inline;
+   }
+}
+
+
+/*---------racks----------------*/
+
+.rack ul, li {
+   list-style: none;
+   margin: 0;
+    padding: 0;
+  }
+
+.rack ul {
+  display: -webkit-flex;
+  display: flex;
+   text-align: center;
+   justify-content: space-between;
+   margin-bottom: 30px; }
+
+.rack ul li {
+  width: 15%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15%;
+  border-radius: 50%;
+  border-color: blue;
+  overflow: hidden;
+  background-color: blue;
+ }
+
+.rack ul li img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    object-fit: cover;
+    }
+  .rack1 {
+    padding-left: 120px;
+    padding-top: 30px;
+  }
+  .rack2{
+    padding-right:0px;
+    }
+   .rack3{
+     padding-left: 150px;
+   }
+   .rack4{
+     padding-right:10px;
+   }
+/*--------container---------------*/
+.container{
+  margin-left:10%;
+}
+/*-----------------share-buttons---------*/
+
+
+ #share-buttons {
+  padding-left: 520px;
+  padding-top: 2px;
+}
+  #share-buttons img {
+  width: 35px;
+  padding:5px;
+  border: 0;
+  box-shadow: 0;
+  display:inline;
+  }
+
+h1 ,h6{
+  font-style: italic;
+}
+
+</style>
+</head>
+<body>
+<h1>Top Performer's</h1>
+<h6>Overall top performing top performing student in platform</h6>
+  <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Overall</a>
+  <a href="#news">College</a>
+  <a href="#contact">University</a>
+  <a href="#about">Batch</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+
+</div>
+
+
+  <div class="container">
+    <div class="rack">
+    <div class ="rack1">
+<ul>
+  <li><img src="pic15.jpeg"></li>
+  <li><img src="pic1.jpeg"></li>
+  <li><img src="pic2.jpeg"></li>
+  <li><img src="pic3.jpeg"></li></ul>
+  </div>
+  <div class="rack2">
+  <ul>
+  <li><img src="pic4.jpeg"></li>
+  <li><img src="pic5.jpeg"></li>
+  <li><img src="pic6.jpeg"></li>
+  <li><img src="pic14.jpeg"></li>
+  <li><img src="pic16.jpeg"></li>
+</ul></div>
+<div class="rack3">
+<ul>
+<li><img src="pic7.jpeg"></li>
+<li><img src="pic8.jpeg"></li>
+<li><img src="pic9.jpeg"></li>
+<li><img src="pic10.jpeg"></li>
+</ul></div>
+
+<div class="rack4">
+<ul>
+<li><img src="pic11.jpeg"></li>
+<li><img src="pic12.jpeg"></li>
+<li><img src="pic13.jpeg"></li>
+</ul></div>
+</div>
+</div>
+
+
+<div id="share-buttons">
+
+
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+
+
+
+
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+    </a>
+
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
